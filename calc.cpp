@@ -17,6 +17,7 @@ class Calculator {
         double divide(double x, double y);
 };
 
+
 double Calculator::add(double x, double y) {
     cout << x + y << endl;
     return 0;
@@ -48,7 +49,7 @@ int main() {
     cout << "CLCalc v1.0" << endl;
     
     while (true) {
-        cout << "enter operator: ";
+        cout << "clcalc$ ";
         cin >> op;
 
         // Custom Commands 
@@ -59,6 +60,9 @@ int main() {
         else if (op == 'l') {
             cout << "list of operators {+, -, *, /}" << endl;
             continue;
+        }
+        else if (op == 'cmd') {
+            
         }
 
         // Calculator Operations
