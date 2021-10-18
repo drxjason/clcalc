@@ -4,4 +4,12 @@ compile:
 $ make
 ```
 ```console
-$ ./calc
+$ ./clc
+Usage: ./clc [operation] [number] [number]
+Operation:
+    add            add 2 numbers
+    sub            subtract 2 numbers
+    mul            multiply 2 numbers
+    div            divide 2 numbers
+    exp            find the power of a number
+```
