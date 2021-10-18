@@ -1,2 +1,7 @@
-# clcalc
-a cli based calculator
+# CLCalc: a command based calculator :)
+compile:
+```console
+$ make
+```
+```console
+$ ./calc
