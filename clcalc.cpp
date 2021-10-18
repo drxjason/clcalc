@@ -59,19 +59,24 @@ double Operations::exponent(double base, double exp) {
     return 0;
 }
 
+static void usage(string name) {
+    cerr << "Usage: " << argv[0] << " [operation] " << "[number] " << "[number]"
+         << "Operation:"
+         << "   add             add 2 numbers"
+         << "   sub             subtract 2 numbers"
+         << "   mul             multiply 2 numbers"
+         << "   div             divide 2 numbers"
+         << "   exp             find the power of a number"
+         << "Err: not enough arguments"
+         << endl;
+}
+
 int main(int argc, char *argv[]) {
     Operations op;
 
-    if (argc != 4) {
-        cout << "Usage: " << argv[0] << " [operation] " << "[number] " << "[number]" << endl;
-        cout << "Operation:" << endl;
-        cout << "   add             add 2 numbers" << endl;
-        cout << "   sub             subtract 2 numbers" << endl;
-        cout << "   mul             multiply 2 numbers" << endl;
-        cout << "   div             divide 2 numbers" << endl;
-        cout << "   exp             find the power of a number" << endl;
-        cout << "Err: not enough arguments" << endl;
-        return 0;
+    if (argc < 4) {
+        usage(argv[0]);
+        return 1;
     }
 
     const string operation = argv[1];
