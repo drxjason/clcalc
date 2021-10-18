@@ -45,7 +45,7 @@ int main() {
 
     system("clear");
 
-    cout << "CLCalc"
+    cout << "CLCalc v1.0" << endl;
     
     while (true) {
         cout << "enter operator: ";
