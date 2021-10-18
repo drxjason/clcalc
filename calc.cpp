@@ -1,5 +1,6 @@
-// CLCalc Ver 1.0
+// CLCalc Ver 1.0 :)
 // By dRX Jason
+// Revised October 18
 
 #include <iostream>
 #include <cstdlib>
