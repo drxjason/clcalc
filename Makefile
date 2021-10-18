@@ -1,8 +1,8 @@
 CC=g++
 CXXFLAGS=-Wall -Wextra -pedantic
 
-calc: calc.cpp
-	$(CC) calc.cpp -o calc $(CXXFLAGS)
+clcalc2: clcalc.cpp
+	$(CC) clcalc.cpp -o clc $(CXXFLAGS)
 
 clean:
-	rm -f calc
+	rm -f clc
